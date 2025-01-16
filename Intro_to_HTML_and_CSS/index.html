@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        #youtube-iframe {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nav">
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </section>
+    <section class="content">
+        <div class="heading">
+            <h1>About Me</h1>
+            <h2 class="subheading">Unemployed Web Dev</h2>
+        </div>
+        <h3>Degrees of Deception</h3>
+
+        <p>They said the future was written in code,
+            <br>
+            A golden road where fortunes flowed.
+            <br>
+            STEM was the key, the promised land,
+            <br>
+            But the lock was rigged, the deck pre-planned.
+        </p>
+
+        <p>Flooded the gates with dreams so bright,
+            <br>
+            Told us there’d be an endless fight,
+            <br>
+            For talent, for minds, for what we’d bring,
+            <br>
+            But the truth was hidden: a puppet’s string.
+        </p>
+
+        <p>They built the glut to make us fall,
+            <br>
+            Cheap labor, endless, at their call.
+            <br>
+            Degrees in hand, we walk the line,
+            <br>
+            But the feast was theirs, and the scraps were mine.
+        </p>
+
+        <p>Degrees of deception, sold as gold,
+            <br>
+            A market flooded, the lie retold.
+            <br>
+            Promises made, but none were kept,
+            <br>
+            Just a field of dreams where the workers wept.
+            <br>
+            We’re left to rot, cast off, betrayed,
+            <br>
+            By the very path we thought would save.
+        </p>
+
+        <p>An unsatiable demand, they cried,
+            <br>
+            But it was a ruse, a baited tide.
+            <br>
+            A harvest ripe, a crop to cull,
+            <br>
+            To pick the few, the rest to dull.
+        </p>
+
+        <p>The wage they crushed beneath their feet,
+            <br>
+            With surplus minds to make it cheap.
+            <br>
+            A pipeline built to feed their greed,
+            <br>
+            While we decay, unmet in need.
+        </p>
+
+        <p>The dream was hollow, a cunning ploy,
+            <br>
+            A million graduates to employ,
+            <br>
+            But only the chosen ever rise,
+            <br>
+            The rest discarded, modern lies.
+        </p>
+
+        <p>The conspirators laugh behind closed doors,
+            <br>
+            Counting profits while we’re ignored.
+            <br>
+            Our dreams were bait, their profits soared,
+            <br>
+            While we’re left broken, dreams abhorred.
+        </p>
+
+        <p>Seven years for a future denied,
+            <br>
+            An assembly line where hope has died.
+            <br>
+            The glut remains, their profits swell,
+            <br>
+            Welcome to the wage-slave hell.
+        </p>
+
+        <img src="./deception.webp" class="image"
+            alt="An evocative cover art for 'Degrees of Deception.' The artwork portrays a somber, dystopian scene with a futuristic cityscape in the future soon to be.">
+        <br>
+        <a href="https://www.youtube.com/watch?v=_P8PLHvZygo" target="_blank">The Altar of Moloch, The Superorganism</a>
+    </section>
+
+    <section class="hobbies">
+        <h2>Interests</h2>
+        <ul>
+            <li>Permaculture</li>
+            <li>Natural Building</li>
+            <li>Freedom</li>
+        </ul>
+    </section>
+
+    <section class="form">
+        <form>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <iframe id="youtube-iframe" width="560" height="315" src="https://www.youtube.com/embed/ZiIc0HuJ78Q?enablejsapi=1&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </footer>
+
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-iframe', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+    </script>
+</body>
+
+</html>

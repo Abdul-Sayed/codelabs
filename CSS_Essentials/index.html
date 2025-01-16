@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sticky Header</h1>
+    </header>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <div class="div3">div3</div>
+    <nav class="nav">
+        <ul>
+            <li>Back</li>
+            <li>Current</li>
+            <li>Next</li>
+        </ul>
+    </nav>
+    <section class="image-overlay">
+        <img src="https://miro.medium.com/v2/resize:fit:1280/1*mcBCV1wXv5pLspJa6mvImw.jpeg"
+            alt="Robot taking yer JOBS!">
+        <h1>Efficiency doesn’t leave room for empathy</h1>
+    </section>
+    <div class="center">
+        <span>
+
+        </span>
+    </div>
+    <div class="flex">
+        <span>Item1</span>
+        <span>Item2</span>
+        <span>Item3</span>
+        <span>Item4</span>
+
+    </div>
+    <section class="cards">
+        <div class="card">
+            <h2>Boreas</h2>
+            <p>Earth</p>
+        </div>
+        <div class="card">
+            <h2>Notus</h2>
+            <p>Fire</p>
+        </div>
+        <div class="card">
+            <h2>Eurus</h2>
+            <p>Air</p>
+        </div>
+        <div class="card">
+            <h2>Zephyrus</h2>
+            <p>Water</p>
+        </div>
+    </section>
+    <section class="modal">
+        <dialog id="my-dialog">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto officiis voluptatem rem doloremque ratione mollitia illo? Commodi quis veniam doloribus unde atque minima voluptatum nemo! Tempora dicta earum voluptate accusantium!</p>
+            <button id="hide-button" class="button">Close Modal</button>
+        </dialog>
+        <button id="show-button" class="button">Show Modal</button>
+    </section>
+    <section class="gallery">
+        <img src="https://placeholder.pics/svg/300x200" alt="Image 1">
+        <img src="https://placeholder.pics/svg/300x200" alt="Image 2">
+        <img src="https://placeholder.pics/svg/300x200" alt="Image 3">
+        <img src="https://placeholder.pics/svg/300x200" alt="Image 4">
+        <img src="https://placeholder.pics/svg/300x200" alt="Image 5">
+        <img src="https://placeholder.pics/svg/300x200" alt="Image 6">
+        <img src="https://placeholder.pics/svg/300x200" alt="Image 7">
+        <img src="https://placeholder.pics/svg/300x200" alt="Image 8">
+    </section>
+
+
+
+    <script>
+        const showButton = document.querySelector('#show-button');
+        const hideButton = document.querySelector('#hide-button');
+        const dialog = document.querySelector('#my-dialog');
+        showButton.addEventListener('click', () => {
+            dialog.showModal();
+        });
+        hideButton.addEventListener('click', () => {
+            dialog.close();
+        });
+    </script>
+</body>
+
+</html>

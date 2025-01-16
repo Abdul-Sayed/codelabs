@@ -1,2 +1,0 @@
-# codelabs
-Assignments and Exercises
