@@ -116,5 +116,5 @@ function greet(name) {
   }
   
   calculateFinalPrice(100); // Default discountRate = 0.15, taxRate = 0.08
-  calculateFinalPrice(200, 0.2, 0.1); // Custom discountRate = 0.2, taxRate = 0.1
+  calculateFinalPrice(250, 0.2, 0.1); // Custom discountRate = 0.2, taxRate = 0.1
   
