@@ -1,0 +1,26 @@
+div {
+    margin-top: 3rem;
+}
+
+.exercise-3 {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    .car-img {
+        width: 200px;
+        height: 200px;
+    }
+    button {
+        height: 40px;
+        cursor: pointer;
+    }
+}
+
+.exercise-6 {
+    margin-bottom: 4rem;
+}
+.calculator-form {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 1rem;
+}
